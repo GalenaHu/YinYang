@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>YinYang</title>
+	<style>
+    body {
+    	background-color: #d6d6d6;
+    }
+
+    .yinyang {
+    	margin: 30px auto;
+    	background-color: white;
+    	width: 300px;
+    	height: 600px;
+    	border-right: 300px solid black;
+    	border-radius: 100%;
+    	position: relative;
+    }
+
+    .yinyang:hover {
+    	transform: rotate(360deg);
+    	transition: transform 2s;
+    }
+
+    .yinyang:before {
+    	content: "";
+    	position: absolute;
+    	width: 100px;
+    	height: 100px;
+    	background-color: black;
+    	border: 100px solid white;
+    	left: 50%;
+    	border-radius: 100%;
+    }
+
+    .yinyang:after {
+    	content: "";
+    	position: absolute;
+    	width: 100px;
+    	height: 100px;
+    	background-color: white;
+    	border: 100px solid black;
+    	left: 50%;
+    	top: 50%;
+    	border-radius: 100%;
+    }
+	</style>
+</head>
+<body>
+	<div class="yinyang"></div>
+</body>
+</html>
